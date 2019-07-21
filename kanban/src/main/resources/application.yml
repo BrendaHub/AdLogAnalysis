@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:27706/db_doctor330?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: doctor330_2016Brenda
+    #  $VJ#FHIK8HMJE4Mkq43QALH>
+
+  profiles:
+    active: dev
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  jackson:
+    date-format: java.text.SimpleDateFormat
+    time-zone: UTC
+server:
+  port: 8080
+  servlet:
+    context-path: /
