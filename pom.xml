@@ -32,7 +32,7 @@
 		<kafka.version>0.10.0.1</kafka.version>
 		<flume.version>1.6.0</flume.version>
 		<hbase.version>1.2.4</hbase.version>
-		<hive.version>2.1.1</hive.version>
+		<hive.version>3.1.1</hive.version>
 		<redis.version>2.9.0</redis.version>
 		<common.version>0.0.1-SNAPSHOT</common.version>
 	</properties>
