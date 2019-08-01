@@ -16,10 +16,12 @@ public class DataKafkaProducer {
             return;
         }
 
+        String hdfspath = "hdfs://hadoopcluster:9000/data/behavior_log.cvs";
+
         // default params
         String dataPath = args[0];
         long intervalMS = 1;
-        String hostKafka = "hzhadoop1:9092";
+        String hostKafka = "hadoopcluster:9092";
 
         if (args.length == 2) {
             intervalMS = Long.parseLong(args[1]);
