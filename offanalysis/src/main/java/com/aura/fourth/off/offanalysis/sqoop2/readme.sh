@@ -30,4 +30,12 @@
 ##
 ##  create link -connector hdfs-connector  创建hdfs link
 ##  start job --name mh-2 --synchronous
+##
+##  /sqoop  目录下，  user_profile parquet
+##  /sqoop/user_profile   user_profile  text
+##  /sqoop/ad_feature      ad_feature   parquet
+##  /sqoop/ad_feature_text  ad_featrue   text
+##
+##
+##
 #############################
