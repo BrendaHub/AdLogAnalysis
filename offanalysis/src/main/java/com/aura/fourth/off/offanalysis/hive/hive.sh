@@ -20,3 +20,19 @@ stored as parquet
 location 'hdfs://hadoopnode:9000/sqoop/user_profile_parquet';
 
 ## stored as parquet
+
+广告基本信息表 ad_feature
+
+create external table if not exists ad_feature (
+    adgroup_id  INT,
+    cate_id INT,
+    campaign_id INT,
+    customer_id INT,
+    brand   INT,
+    price   DOUBLE
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+STORED AS PARQUET
+LOCATION 'hdfs://hadoopnode:9000/sqoop/ad_feature';
