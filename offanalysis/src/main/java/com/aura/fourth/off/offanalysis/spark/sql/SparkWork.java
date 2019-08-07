@@ -20,14 +20,16 @@ public class SparkWork {
                 .config("spark.some.config.option", "some-value")
                 .getOrCreate();
 
-//        Dataset<Row> df = spark.read().csv("hdfs://hadoopnode:9000/bidb");
-//        df.write().parquet("hdfs://hadoopnode:9000/bidb/parquet");
+        Dataset<Row> _df = spark.read().csv("hdfs://hadoopnode:9000/bidb/raw_sample.csv");
+        _df.write().parquet("hdfs://hadoopnode:9000/bidb/raw_sample_parquet");
+//        _df.show();
 
-        Dataset<Row> df = spark.read().parquet("hdfs://hadoopnode:9000/bidb/parquet");
+//        Dataset<Row> df = spark.read().parquet("hdfs://hadoopnode:9000/bidb/parquet");
 
-        long count =  df.count();
-        System.out.println("count = " + count );
-        df.printSchema();
+//        long count =  df.count();
+//        System.out.println("count = " + count );
+//        df.show();
+//        df.printSchema();
 
         //Dataset<Row> df_parquet = spark.read().parquet("hdfs://hadoopnode:9000/bidb/parquet");
 
